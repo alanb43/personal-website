@@ -1,0 +1,159 @@
+
+@font-face {
+  font-family: 'Amazon-medium';
+  src: url('fonts/OfficinaSanITCTT_Medium/OfficinaSanMdITCTTMedium.woff2') format('woff2'),
+        url('fonts/OfficinaSanITCTT_Medium/OfficinaSanMdITCTTMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'Amazon';
+  src: url('fonts/transfonter.org-20201231-020448/OfficinaSanBlkITCTTBlack.woff2') format('woff2'),
+      url('fonts/transfonter.org-20201231-020448/OfficinaSanBlkITCTTBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body, html{
+  margin: 0px;
+  padding: 0px;
+  background-color: #eaeded;
+  position: relative;
+}
+
+header {
+  height: 62px;
+  background-color: #131921;
+  position: relative;
+}
+
+#logo {
+  width: 90px;
+  height: 57px;
+  position: absolute;
+  left: 1vw;
+  top: .5vh;
+}
+
+#search {
+  height: 44px;
+  background-color: white;
+  width: 60vw;
+  position: absolute;
+  margin-top: 9px;
+  margin-left: 20vw;
+  border-radius: 4px;
+}
+
+#search-button {
+  height: 44px;
+  background-color: #febd69;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  border-radius: 4px;
+}
+
+.search-text {
+  position: absolute;
+  left: 9px;
+  font-size: 18px;
+  font-weight: bold;
+  top: -5px;
+  font-family: "Amazon-medium";
+}
+
+.typewrite {
+  color: black;
+  text-decoration: none;
+  font-family: "Amazon-medium";
+}
+
+#magnifying_glass {
+  position: absolute;
+  left: .5vw;
+  top: .25vw;
+}
+
+#socials {
+  height: 40px;
+  background-color: #232f3e;
+  position: relative;
+  top: 60px;
+  
+}
+
+.social {
+  height: 30px;
+  width: 30px;
+  background-color: #232f3e;
+  margin: 5px;
+  border: 3px white;
+}
+
+#linkedin {
+  position: absolute;
+  left: 1vw;
+  background-color: #232f3e;
+
+  
+}
+
+#github {
+  position: absolute;
+  left: 4vw;
+}
+
+#scholar {
+  position: absolute;
+  left: 7.4vw;
+}
+
+#main-photo {
+  width: 30vw;
+  position: absolute;
+  margin-left: 17vw;
+  top: 15vh;
+  height: 58vh;
+}
+#headshot {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+}
+
+.product-info {
+  position: absolute;
+  margin-left: 880px;
+  top: 130px;
+  width: 580px;
+  font-family: "Amazon-medium";
+}
+
+
+#by-line {
+  font-family: "Amazon-medium";
+  position: absolute;
+  top: 50px;
+  color: #007187;
+}
+
+#descrip1 {
+  position: absolute;
+  top: 90px;
+  line-height: 22px;
+}
+
+.specs {
+  position: absolute;
+  top: 250px;
+  line-height: 22px;
+}
+
+#specs {
+  position: absolute;
+  top: 220px;
+  
+}
