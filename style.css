@@ -20,6 +20,7 @@ body, html{
   margin: 0px;
   padding: 0px;
   background-color: #eaeded;
+  background-color: white;
   position: relative;
 }
 
@@ -82,7 +83,6 @@ header {
   background-color: #232f3e;
   position: relative;
   top: 60px;
-  
 }
 
 .social {
@@ -97,8 +97,6 @@ header {
   position: absolute;
   left: 1vw;
   background-color: #232f3e;
-
-  
 }
 
 #github {
@@ -132,7 +130,6 @@ header {
   font-family: "Amazon-medium";
 }
 
-
 #by-line {
   font-family: "Amazon-medium";
   position: absolute;
@@ -155,9 +152,37 @@ header {
 #specs {
   position: absolute;
   top: 220px;
-  
 }
 
 .specs-item {
   padding: 3px 0px;
+}
+
+.qualifications {
+  position: absolute;
+  top: 500px;
+  line-height: 22px;
+}
+#qualifications {
+  position: absolute;
+  top: 530px;
+}
+
+.qual-item {
+  padding: 3px 0px;
+}
+
+#see {
+  color: #007187;
+}
+
+.price-info {
+  position: absolute;
+  margin-left: 1500px;
+  top: 200px;
+  width: 250px;
+  background-color: white;
+  border: 2px #eceeee;
+  border-style: solid;
+  border-radius: 5%
 }
