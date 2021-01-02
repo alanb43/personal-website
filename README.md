@@ -1,6 +1,6 @@
 # Personal Website 
 
-This project was completed in a couple of weeks during my free time during holiday break (January 2021). I wanted to put my front-end skills to the test to create a fun mock of Amazon, a company I would love to engineer software and data for in the future.
+V1 of this project will be completed in a couple of weeks during my free time during holiday break (January 2021). I wanted to put my front-end skills to the test to create a fun mock of Amazon, a company I would love to engineer software and data for in the future.
 
 ### Features, versions
 
