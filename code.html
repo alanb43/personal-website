@@ -3,27 +3,47 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <script src="animated-search-text.js"></script>
+  <script type="text/javascript">
+    function swap() {
+      var cart0 = document.getElementById("cart0");
+          cart1 = document.getElementById("cart1");
+          cart0src = cart0.src;
+          cart1src = cart1.src;
+      cart0.src = cart1src;
+      cart1.src = cart0src;
+    }
+
+  </script>
 </head>
 
-  <header id="header">
-    <a href="#header"><img src="images/best1.jpg" id="logo"></a>
-    <div id="search">
-      <div id="search-button"><img src="images/magnifying_glass.PNG" id="magnifying_glass"></div>
-        <p class="search-text"><a href="#" class="typewrite" data-period="2000" data-type='[ "An ever-curious learner with a passion for tech", 
+<header id="header">
+  <video disableRemotePlayback autoplay muted loop id="logo">
+    <source src="images/best1.mp4" type="video/mp4">
+  </video>
+  <div id="search">
+    <div id="search-button"><img src="images/magnifying_glass.PNG" id="magnifying_glass"></div>
+      <p class="search-text"><a href="#" class="typewrite" data-period="2000" data-type='[ "An ever-curious learner with a passion for tech", 
           "A hard-working leader with something to prove", 
           "A developer with a passion for simplicity and efficiency", 
           "A student that insists on achieving his relentlessly high standards" ]'>
-          <span class="wrap"></span>
-        </a></p>
-    </div>
-    <div id="socials">
-      <a href="linkedin.com/in/alan-bergsneider/" target="_blank"><img src="images/linkedin2.png" id="linkedin" class="social"></a>
-      <a href="https://github.com/alanb43" target="_blank"><img src="images/github3.png" id="github" class="social"></a>
-      <a href="https://www.egr.msu.edu/seescholars/scholars/alan-bergsneider" target="_blank"><img src="images/scholar.png" id="scholar" class="social"></a>
-    </div>
-    <div id="main-photo">
-      <img src="images/Headshot.jpeg" id="headshot">
-    </div>
+        <span class="wrap"></span>
+      </a></p>
+  </div>
+  <div class="cart">
+    <img src="images/cart0.PNG" id="cart0"><img src="images/cart1.PNG" id="cart1">
+  </div>
+  <div id="socials">
+    <a href="linkedin.com/in/alan-bergsneider/" target="_blank"><img src="images/linkedin2.png" id="linkedin" class="social"></a>
+    <a href="https://github.com/alanb43" target="_blank"><img src="images/github3.png" id="github" class="social"></a>
+    <a href="https://www.egr.msu.edu/seescholars/scholars/alan-bergsneider" target="_blank"><img src="images/scholar.png" id="scholar" class="social"></a>
+    <a href="https://www.youtube.com/channel/UCe8lesNCPjh_wws11G9mE0A" target="_blank"><img src="images/youtube.png" id="youtube" class="social"></a>
+  </div>
+</header>
+   
+<body>
+  <div class="top-half">
+    <p id="directory">Employees &nbsp;›&nbsp; Interns &nbsp;›&nbsp; Candidates &nbsp;›&nbsp; Best Sellers</p>
+    <img src="images/Headshot.jpeg" id="headshot">
     <div id="headline" class="product-info">
       <h1>Alan Bergsneider [2001 Edition]</h1>
       <p id="by-line">by Mr. & Mrs. Bergsneider</p>
@@ -48,16 +68,26 @@
           MSU SEE Scholarship Recipient</a>, awarded $16,000.</li>
         <li class="qual-item">Summer 2020 Front-end internship @ Acuitii (startup), developed skills in HTML, CSS, Sass, Vue.Js 
           while working collaboratively on a small team. Also learned how to use CLI / Git</li>
-        <li class="qual-item">Summer 2021 Software Engineering internship @ Humana with Technology Advancement team. Will be working on projects involving cloud migration, 
+        <li class="qual-item">Summer 2021 Software Engineering internship @ Humana with the Technology Advancement team. Will be working on projects involving cloud migration, 
           interoperability, data movement and data security in order to assist Humana's large scale migration of applications and data assets into cloud.
           Will use and develop skills with technologies including Azure Cloud (Data Factory, App Service, Databricks, Azure SQL, Azure Synapse, Azure Functions, 
           Storage Accounts, etc.), Hadoop, Scala, Spark, and Python. Projects will go into production and will be used by business or IT teams at Humana.</li>
-        <li class="qual-item">Fall 2021 Internship Opportunities, Advertise Here!</li>
+        <li class="qual-item"></li>
+        
       </ul>
     </div>
     <div class="price-info">
-      <p>Contact for price</p>
+      <p class="price-para" id="price">Contact for price</p>
+      <p class="price-para" id="shipping">& <strong>FREE Shipping</strong>. <a href="" id="details-link">Details</a></p>
+      <p class="price-para" id="arrives">Virtually Arrives: <strong>1 business day</strong></p>
+      <p class="price-para" id="arrives1">Physically Arrives: <strong>Contact</strong></p>
+      <p class="price-para" id="stock">In Stock.</p>
+      <button id="max"><p id="maxp" class="max">Qty: Max (1)</p></button>
+
+      <form class="cart-button" type="button" value="Swap cart" id="add2cart" onclick="swap();"><img src="images/add2cart.PNG" id="add2cart"></form>
+      <form class="cart-button" type="button" value="Swap cart" id="buynow" onclick="swap();"><img src="images/buynow.PNG" id="buynow"></form>
     </div>
-  </header>
+  </div>
+</body>
 </html>
   
