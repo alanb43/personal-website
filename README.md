@@ -6,9 +6,9 @@ V1 of this project will be completed in a couple of weeks during my free time du
 
 ##### V1 [Began 1/1/2021]
 
-The first version of this site will be suited for desktop viewing only. I want to solidify my design, information, and beginning 'look' before I begin to complicate things.
+The first version of this site will be suited for desktop viewing only. I want to solidify my design, information, and beginning 'look' before I begin to complicate things and worry about those who will access this site on their phones, as these visitors will be very uncommon.
 
-This design incorporates one main product view page thus far. I hope to add a pre-product page in a later version that this product page will be accessed from.
+This design incorporates one main product view page thus far. I hope to add other pages perhaps in a later version, if necessary.
 
 It should be noted that in V2, making the site responsive for different views will be a priority.
 
