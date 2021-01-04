@@ -1,307 +1,140 @@
-
 @font-face {
   font-family: 'Amazon-medium';
   src: url('fonts/OfficinaSanITCTT_Medium/OfficinaSanMdITCTTMedium.woff2') format('woff2'),
-        url('fonts/OfficinaSanITCTT_Medium/OfficinaSanMdITCTTMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+      url('fonts/OfficinaSanITCTT_Medium/OfficinaSanMdITCTTMedium.woff') format('woff');
+  font-weight: 500; font-style: normal; font-display: swap;
 }
 @font-face {
   font-family: 'Amazon';
   src: url('fonts/transfonter.org-20201231-020448/OfficinaSanBlkITCTTBlack.woff2') format('woff2'),
       url('fonts/transfonter.org-20201231-020448/OfficinaSanBlkITCTTBlack.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+  font-weight: 900; font-style: normal; font-display: swap;
 }
 
-body, html{
-  margin: 0px;
-  padding: 0px;
-  background-color: #eaeded;
-  background-color: white;
-  position: relative;
-}
+body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-color: white; position: relative; }
 
-header {
-  height: 64px;
-  width: 100%;
-  background-color: #131921;
-  position: fixed;
-  z-index: 100;
-}
+header { height: 64px; width: 100%; background-color: #131921; position: fixed; z-index: 100; }
 
-#logo {
-  width: 105px;
-  height: 63px;
-  position: relative;
-  left: 7px;
-  top: 5px;
-  
-}
+#logo { width: 105px; height: 63px; position: relative; left: 7px; top: 5px; }
 
-#search {
-  height: 44px;
-  background-color: white;
-  width: 60vw;
-  position: relative;
-  top: -57px;
-  left: 390px;
-  border-radius: 4px;
-}
+#search { height: 44px; background-color: white; width: 60vw; position: relative; top: -57px; left: 390px; border-radius: 4px; }
 
-#search-button {
-  height: 44px;
-  background-color: #febd69;
-  width: 50px;
-  position: absolute;
-  right: 0;
-  border-radius: 4px;
-}
+#search-button { height: 44px; background-color: #febd69; width: 50px; position: absolute; right: 0; border-radius: 4px; }
 
-.search-text {
-  position: absolute;
-  left: 9px;
-  font-size: 18px;
-  font-weight: bold;
-  top: -5px;
+.search-text { position: absolute; left: 9px; font-size: 18px; font-weight: bold; top: -5px; font-family: "Amazon-medium"; }
+
+.typewrite { color: black; text-decoration: none; font-family: "Amazon-medium"; }
+
+#magnifying_glass { position: relative; left: .5vw; top: .25vw; }
+
+.cart { position: fixed; top: 11px; left: 1780px; height: 38px; width: 75px; }
+
+#cart0 { position: fixed; top: 11px; left: 1782px; z-index: 40; }
+
+#cart1 { position: fixed; top: 9px; left: 1780px; }
+
+#socials { height: 40px; background-color: #232f3e; position: relative; top: -48px; }
+
+.social { height: 30px; width: 30px; background-color: #232f3e; margin: 5px; border: 3px white; margin-right: -25px; }
+
+#linkedin { position: relative; left: 20px; background-color: #232f3e; }
+
+#github { position: relative; left: 80px; }
+
+#scholar { position: relative; left: 140px; }
+
+#youtube { position: relative; left: 200px; }
+
+#directory { position: absolute; top: 120px; left: 300px; font-family: "Amazon-medium"; font-size: 14px; color: #878989; }
+
+#headshot { position: relative; top: 180px; left: 390px; height: 460px; width: 460px; }
+
+.product-info { position: absolute; margin-left: 880px; top: 160px; width: 500px; font-family: "Amazon-medium"; }
+
+#by-line { font-family: "Amazon-medium"; position: absolute; top: 50px; color: #007187; }
+
+#descrip1 { position: absolute; top: 90px; line-height: 22px; }
+
+.specs { position: absolute; top: 270px; line-height: 22px; }
+
+#specs { position: absolute; top: 245px; }
+
+.specs-item { padding: 3px 0px; }
+
+.qualifications { position: absolute; top: 550px; line-height: 23px; }
+
+#qualifications { position: absolute; top: 570px; }
+
+.qual-item { padding: 3px 0px; }
+
+#see { color: #007187; }
+
+.price-info { position: absolute; margin-left: 1430px; top: 180px; width: 240px; background-color: white; 
+  border: 2px #eceeee; border-style: solid; border-radius: 5%; font-family: "Amazon-medium"; }
+
+.price-para { position: relative; left: 13px; top: -7px; width: 220px; background-color: white; }
+
+#price { color: #b32704; font-size: 20px; width: 150px; }
+
+#shipping { color: black; top: -22px; font-size: 15px; width: 150px; }
+
+#arrives { color: black; top: -21px; font-size: 15px; width: 200px; }
+
+#details-link { text-decoration: none; color: #31a9d8; }
+
+#arrives1 { color: black; top: -34px; font-size: 15px; width: 200px; }
+
+#stock { color: #c55a07; top: -30px; font-size: 21px; width: 200px; }
+
+#max { position: relative; left: 12px; top: -43px; height: 23px; 
+  border: 2px #d9dcdc; border-style: solid; border-radius: 20px; font-size: 11.5px; font-family: "Amazon-medium"; }
+
+#maxp { position: relative; left: 0px; top: -10px; height: 20px; z-index: 5;}
+
+.cart-button { position: relative; top: -25px; left: 10px; background: transparent; border: none !important; height: 100%; width: 240px; }
+
+#add2cart { left: 15px; height: 105%; width: 93%; }
+
+#buynow { left: 15px; height: 105%; width: 93%; }
+
+#secure { position: relative; top: -18px; left: 13px;}
+
+#ships { position: relative; font-size: 12px; line-height: 2px; left: 18px; top: -20px; }
+
+#return { font-family: "Amazon-medium"; font-size: 16px; position: relative; left: 18px; top: -15px; }
+
+.returns { position: relative; top: -25px; left: 20px; font-size: 14px; color: #31a9d8; }
+
+footer { position: absolute; bottom: -1000px; background-color: #131921; width: 100%; }
+
+.modal { width: 100%; height: 312%; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 8; justify-content: center; display: none; }
+
+.modal-content { position: fixed; top: 17vh; left: 34vw; width: 30vw; height: 31.5vh; background-color: #eaeded; border-radius: 4px; }
+
+#explicit-contact { position: fixed; top: 17vh; left: 45.7vw; font-size: 26px; font-family: "Amazon-medium";}
+
+#contact-info { position: fixed; top: 23.1vh; left: 35.6vw; font-size: 16px; font-family: "Amazon-medium"; line-height: 28px; }
+
+#linkedin3 { position: fixed; top: 40.7vh; height: 33px; width: 33px; }
+
+#info-info { position: fixed; top: 23.1vh; left: 45.6vw; font-size: 15px; font-family: "Amazon-medium"; line-height: 27px;}
+
+#linkprofile { position: fixed; top: 41vh; left: 37.6vw; text-decoration: none; font-size: 16px; color: #31a9d8; }
+
+#info-info2 { position: fixed; top: 37.1vh; left: 45.7vw; font-size: 15px; font-family: "Amazon-medium"; line-height: 25px; }
+
+.close { position: absolute; top: 0; right: 10px; font-size: 42px; color: #333; 
+  transform: rotate(45deg); cursor: pointer; }
+
+#contactbutton {
+  background: none!important;
+  border: none;
+  padding: 0!important;
   font-family: "Amazon-medium";
-}
-
-.typewrite {
-  color: black;
-  text-decoration: none;
-  font-family: "Amazon-medium";
-}
-
-#magnifying_glass {
-  position: relative;
-  left: .5vw;
-  top: .25vw;
-}
-
-.cart {
-  position: fixed;
-  top: 11px;
-  left: 1780px;
-  height: 38px;
-  width: 75px;
-}
-
-#cart0 {
-  position: fixed;
-  top: 11px;
-  left: 1782px;
-  z-index: 40;
-}
-#cart1 {
-  position: fixed;
-  top: 9px;
-  left: 1780px;
-}
-
-#socials {
-  height: 40px;
-  background-color: #232f3e;
-  position: relative;
-  top: -48px;
-}
-
-.social {
-  height: 30px;
-  width: 30px;
-  background-color: #232f3e;
-  margin: 5px;
-  border: 3px white;
-  margin-right: -25px;
-}
-
-#linkedin {
-  position: relative;
-  left: 20px;
-  background-color: #232f3e;
-}
-
-#github {
-  position: relative;
-  left: 80px;
-}
-
-#scholar {
-  position: relative;
-  left: 140px;
-}
-
-#youtube {
-  position: relative;
-  left: 200px;
-}
-#directory {
-  position: absolute;
-  top: 120px;
-  left: 300px;
-  font-family: "Amazon-medium";
-  font-size: 14px;
-  color: #878989;
-}
-
-#headshot {
-  position: relative;
-  top: 180px;
-  left: 390px;
-  height: 460px;
-  width: 460px;
-}
-
-.product-info {
-  position: absolute;
-  margin-left: 880px;
-  top: 160px;
-  width: 500px;
-  font-family: "Amazon-medium";
-}
-
-#by-line {
-  font-family: "Amazon-medium";
-  position: absolute;
-  top: 50px;
-  color: #007187;
-}
-
-#descrip1 {
-  position: absolute;
-  top: 90px;
-  line-height: 22px;
-}
-
-.specs {
-  position: absolute;
-  top: 270px;
-  line-height: 22px;
-}
-
-#specs {
-  position: absolute;
-  top: 245px;
-}
-
-.specs-item {
-  padding: 3px 0px;
-}
-
-.qualifications {
-  position: absolute;
-  top: 550px;
-  line-height: 23px;
-}
-#qualifications {
-  position: absolute;
-  top: 570px;
-}
-
-.qual-item {
-  padding: 3px 0px;
-}
-
-#see {
-  color: #007187;
-}
-
-.price-info {
-  position: absolute;
-  margin-left: 1430px;
-  top: 180px;
-  width: 240px;
-  background-color: white;
-  border: 2px #eceeee;
-  border-style: solid;
-  border-radius: 5%;
-  font-family: "Amazon-medium";
-}
-
-.price-para {
-  position: relative;
-  left: 13px;
-  top: -7px;
-  width: 220px;
-  background-color: white;
-}
-
-#price {
-  color: #b32704;
-  font-size: 20px;
-  width: 150px;
-}
-
-#shipping {
-  color: black;
-  top: -22px;
   font-size: 15px;
-  width: 150px;
-}
-
-#arrives {
-  color: black;
-  top: -21px;
-  font-size: 15px;
-  width: 200px;
-}
-
-#details-link {
-  text-decoration: none;
   color: #31a9d8;
-}
-
-#arrives1 {
-  color: black;
-  top: -34px;
-  font-size: 15px;
-  width: 200px;
-}
-
-#stock {
-  color: #007621;
-  top: -30px;
-  font-size: 21px;
-  width: 200px;
-}
-
-#max {
+  text-decoration: none;
+  cursor: pointer;
   position: relative;
-  left: 12px;
-  top: -43px;
-  height: 23px;
-  border: 2px #d9dcdc;
-  border-style: solid;
-  border-radius: 20px;
-  font-size: 11.5px;
-  font-family: "Amazon-medium";
-}
-
-#maxp {
-  position: relative;
-  left: 0px;
-  top: -10px;
-  height: 20px;
-}
-
-.cart-button {
-  position: relative;
-  top: -25px;
-  left: 10px;
-  background: transparent;
-  border: none !important;
-  height: 100%;
-  width: 240px;
-}
-
-#add2cart {
-  height: 110%;
-  width: 95%;
-}
-
-#buynow {
-  height: 110%;
-  width: 95%;
+  left: 5px;
 }

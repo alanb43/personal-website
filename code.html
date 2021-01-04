@@ -2,7 +2,17 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+
   <script src="animated-search-text.js"></script>
+  
+  <script>
+    document.getElementById('contactbutton').addEventListener("click", 
+      function() { document.querySelector('.modal').style.display = "flex"; });
+
+    document.querySelector('.close').addEventListener("click", 
+      function() { document.querySelector('.modal').style.display = "none"; });
+  </script>
+  
   <script type="text/javascript">
     function swap() {
       var cart0 = document.getElementById("cart0");
@@ -12,7 +22,6 @@
       cart0.src = cart1src;
       cart1.src = cart0src;
     }
-
   </script>
 </head>
 
@@ -42,6 +51,25 @@
    
 <body>
   <div class="top-half">
+    <div class="modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <p id="explicit-contact"><strong>Contact Me!</strong></p>
+        <div id="left-side">
+          <p id="contact-info">ab43work<span style="color: #31a9d8">@</span><span style="color: navy">gmail.com</span>
+            <br>bera<span style="color: #31a9d8">@</span><span style="color: #f2c649;">umich.edu</span>
+            <br>bergsnei<span style="color: #31a9d8">@</span><span style="color: green;">msu.edu</span><br>(586) 443-9300
+            <br><a href="linkedin.com/in/alan-bergsneider/" target="_blank"><img src="images/linkedin2.png" id="linkedin3">
+              <span id="linkprofile">Linkedin Profile</span></a></p>
+        </div>
+        <div id="right-side">
+          <p id="info-info">I'm most responsive at my gmail and umich<br> addresses, though I check my MSU email infrequently<br>
+            still. I'm not very receptive to calls, but if you're <br>dying to get in touch please email and call!<br></p>
+          <p id="info-info2">Connect with me on linkedin! Even if I'm not ready<br>for your opportunities now, I'm constantly learning<br>
+            and adding to my skillset for the future.</p>
+        </div>
+      </div>
+    </div>
     <p id="directory">Employees &nbsp;›&nbsp; Interns &nbsp;›&nbsp; Candidates &nbsp;›&nbsp; Best Sellers</p>
     <img src="images/Headshot.jpeg" id="headshot">
     <div id="headline" class="product-info">
@@ -72,22 +100,33 @@
           interoperability, data movement and data security in order to assist Humana's large scale migration of applications and data assets into cloud.
           Will use and develop skills with technologies including Azure Cloud (Data Factory, App Service, Databricks, Azure SQL, Azure Synapse, Azure Functions, 
           Storage Accounts, etc.), Hadoop, Scala, Spark, and Python. Projects will go into production and will be used by business or IT teams at Humana.</li>
-        <li class="qual-item"></li>
-        
       </ul>
     </div>
     <div class="price-info">
       <p class="price-para" id="price">Contact for price</p>
-      <p class="price-para" id="shipping">& <strong>FREE Shipping</strong>. <a href="" id="details-link">Details</a></p>
+      <p class="price-para" id="shipping">& <strong>FREE Shipping</strong>.<button id="contactbutton">Details</button></p>
       <p class="price-para" id="arrives">Virtually Arrives: <strong>1 business day</strong></p>
       <p class="price-para" id="arrives1">Physically Arrives: <strong>Contact</strong></p>
-      <p class="price-para" id="stock">In Stock.</p>
-      <button id="max"><p id="maxp" class="max">Qty: Max (1)</p></button>
+      <p class="price-para" id="stock">In Stock in Fall 2021.</p>
+      <button id="max" type="button"><p id="maxp" class="max">Qty: Max (1)</p></button>
 
       <form class="cart-button" type="button" value="Swap cart" id="add2cart" onclick="swap();"><img src="images/add2cart.PNG" id="add2cart"></form>
       <form class="cart-button" type="button" value="Swap cart" id="buynow" onclick="swap();"><img src="images/buynow.PNG" id="buynow"></form>
+
+      <img id="secure" src="images/securetransaction.PNG">
+      <p id="ships"><span style="color: #656564;">Ships from </span> &nbsp;Metro Detroit</p>
+      <p id="ships"><span style="color: #656564;">Sold by </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Bergsneider Family</p>
+
+      <p id="return"><strong>Add a Return Offer:</strong></p>
+      <input class="returns" type="checkbox" id="su22" name="su22" value="Summer 2022">
+      <label class="returns" for="su22">Summer 2022</label><br>
+      <input class="returns" type="checkbox" id="grad" name="grad" value="Graduation">
+      <label class="returns" for="grad">After Graduation</label><br>
     </div>
   </div>
 </body>
+<footer>
+  <p id="explicit-contact"></p>
+</footer>
 </html>
   
