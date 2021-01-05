@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Amazon-medium';
   src: url('fonts/OfficinaSanITCTT_Medium/OfficinaSanMdITCTTMedium.woff2') format('woff2'),
@@ -13,9 +14,9 @@
 
 body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-color: white; position: relative; }
 
-header { height: 64px; width: 100%; background-color: #131921; position: fixed; z-index: 100; }
+header { height: 64px; width: 100vw; background-color: #131921; position: fixed; z-index: 100; }
 
-.top-half { position: relative; height: 120vh; }
+.top-half { position: relative; height: 117vh; }
 
 #logo { width: 105px; height: 63px; position: relative; left: 7px; top: 5px; }
 
@@ -49,23 +50,29 @@ header { height: 64px; width: 100%; background-color: #131921; position: fixed; 
 
 #directory { position: absolute; top: 120px; left: 300px; font-family: "Amazon-medium"; font-size: 14px; color: #878989; }
 
-#headshot { position: sticky; top: 180px; bottom: 900px; left: 390px; height: 460px; width: 460px; }
+#headshot { position: sticky; top: 180px; bottom: 0vh; left: 390px; height: 460px; width: 460px; }
 
 .product-info { position: absolute; margin-left: 880px; top: 160px; width: 500px; font-family: "Amazon-medium"; }
 
-#by-line { font-family: "Amazon-medium"; position: absolute; top: 50px; color: #007187; }
+#by-line { font-family: "Amazon-medium"; position: relative; top: -2vh; color: #007187; }
 
-#descrip1 { position: absolute; top: 90px; line-height: 22px; }
+#five-star { position: relative; top: -3vh; left: -0.1vw; width: 100px; }
 
-.specs { position: absolute; top: 270px; line-height: 22px; }
+#ratings { position: relative; top: -7vh; left: 6vw; width: 100px;font-family: "Amazon-medium"; font-size: 15px; color: #007187; }
 
-#specs { position: absolute; top: 245px; }
+#top-break { position: relative; top: -8vh; color: #ededed;  }
+
+#descrip1 { position: relative; top: -8vh; line-height: 22px; }
+
+#specs { position: relative; top: -7.5vh; }
+
+.specs { position: relative; top: -7.7vh; line-height: 22px; }
 
 .specs-item { padding: 3px 0px; }
 
-.qualifications { position: absolute; top: 550px; line-height: 23px; }
+.qualifications { position: relative; top: -7.5vh; line-height: 23px; }
 
-#qualifications { position: absolute; top: 570px; }
+#qualifications { position: relative; top: -7.9vh; }
 
 .qual-item { padding: 3px 0px; }
 
@@ -126,14 +133,32 @@ header { height: 64px; width: 100%; background-color: #131921; position: fixed; 
 .close { position: absolute; top: 0; right: 10px; font-size: 42px; color: #333; 
   transform: rotate(45deg); cursor: pointer; }
 
+#line-break { position: relative; top: 3vh; width: 90%; }
+
 .contactbutton { background: none!important; border: none; padding: 0!important; font-family: "Amazon-medium"; font-size: 15px;
   color: #31a9d8; text-decoration: none; cursor: pointer; position: relative; left: 5px; }
 
-#videos-section { position: relative; top: 0px; left: 10vw; height: 0vh; }
 
-.video-panel { position: relative; margin-right: 1.8vw; }
+#project-head { position: relative; color: #cc6600; font-family: "Amazon-medium"; font-size: 19px; left: 10vw; top: 4vh; width: 400px;}
 
+#videos-section { position: relative; top: 4vh; left: 9vw; width: 80vw; display: inline-flex;}
 
-footer { position: absolute; bottom: -250px; background-color: #131921; width: 100%; height: 5vh; }
+.video-captions { position: relative; width: 60vw; }
+
+.captions { width: 1000px; font-family: "Amazon-medium"; font-size: 16px; color: #31a9d8; display: inline-flex; }
+
+#caption0 { position: relative; left: 12.8vw; top: 2vh; width: 200px; }
+
+#caption1 { position: relative; left: 19.9vw; top: 2vh; width: 200px; }
+
+#caption2 { position: relative; left: 26.4vw; top: 2vh; width: 200px; }
+
+#caption3 { position: relative; left: 29.7vw; top: 2vh; width: 300px; }
+
+#caption4 { position: relative; left: 30vw; top: 2vh; width: 300px; }
+
+.yt-vid { display: inline-flex; margin: 1vw; }
+
+footer { position: absolute; bottom: -300px; background-color: #131921; width: 100%; height: 20vh; }
 
 #footer-contact { font-family: "Amazon-medium"; }
