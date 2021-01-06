@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Amazon-medium';
   src: url('fonts/OfficinaSanITCTT_Medium/OfficinaSanMdITCTTMedium.woff2') format('woff2'),
@@ -18,9 +17,9 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 .top-half { position: relative; height: 117vh; }
 
-#logo { width: 105px; height: 63px; position: relative; left: 7px; top: 5px; }
+#logo { position: relative; left: 0.7vw; top: 0.5vh; width: 105px; height: 63px; }
 
-#search { height: 44px; background-color: white; width: 60vw; position: relative; top: -57px; left: 390px; border-radius: 4px; }
+#search { position: relative; top: -5.6vh; left: 20vw; width: 60vw; height: 4.4vh; background-color: white;  border-radius: 4px; }
 
 #search-button { height: 44px; background-color: #febd69; width: 50px; position: absolute; right: 0; border-radius: 4px; }
 
@@ -50,9 +49,9 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 #directory { position: absolute; top: 120px; left: 300px; font-family: "Amazon-medium"; font-size: 14px; color: #878989; }
 
-#headshot { position: sticky; top: 180px; bottom: 0vh; left: 390px; height: 460px; width: 460px; }
+#headshot { position: sticky; top: 180px; bottom: 0vh; left: 20vw; height: 460px; width: 460px; }
 
-.product-info { position: absolute; margin-left: 880px; top: 160px; width: 500px; font-family: "Amazon-medium"; }
+.product-info { position: relative; left: 46vw; top: -30.5vh; width: 500px; font-family: "Amazon-medium"; }
 
 #by-line { font-family: "Amazon-medium"; position: relative; top: -2vh; color: #007187; }
 
@@ -153,12 +152,24 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 #caption2 { position: relative; left: 26.4vw; top: 2vh; width: 200px; }
 
-#caption3 { position: relative; left: 29.7vw; top: 2vh; width: 300px; }
+#caption3 { position: relative; left: 28.7vw; top: 2vh; width: 300px; }
 
 #caption4 { position: relative; left: 30vw; top: 2vh; width: 300px; }
 
 .yt-vid { display: inline-flex; margin: 1vw; }
 
-footer { position: absolute; bottom: -300px; background-color: #131921; width: 100%; height: 20vh; }
+#navBackToTop { text-decoration: none;}
 
-#footer-contact { font-family: "Amazon-medium"; }
+#navFooterBackToTop { position: absolute; bottom: -11vh; height: 4vh; width: 100%; text-align: center; background-color: #37475a; }
+
+#BackToTopText { position: relative; top: 1vh; font-family: "Amazon-medium"; color: white; }
+
+footer { position: absolute; bottom: -230px; background-color: #131921; width: 100%; height: 12vh; }
+
+#footer-contact { color:#ededed; font-family: "Amazon-medium"; }
+
+#explicit { position: relative; top: 2vh; left: 2.7vw; font-size: 16px;}
+
+#closer { position: relative; top: 1.8vh; left: 3vw; width: 94vw; font-family: "Amazon-medium"; color: #babdc1; font-size: 14.5px; line-height: 2vh;}
+
+#git-closer { color: #babdc1; text-decoration: underline;}
