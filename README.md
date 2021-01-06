@@ -15,4 +15,4 @@ It should be noted that in V2, making the site responsive for different views wi
 
 I have successfully deployed V1 of the site using firebase. The domain name that it will be found on is www.bergsneider.dev, however that may take a couple of days to get set up and working properly. I am really excited that I was able to create and deploy a webpage from scratch, especially because I had no prior experience with scripts in html or deploying a webpage. I learned a lot over the past few days and relearned some old skills, and had a great time doing it. Thanks for reading!
 
-[youtube video showing V1 online](https://youtu.be/kLNYRYyqgr4)
+[V1: Deployed & Online](https://youtu.be/kLNYRYyqgr4)
