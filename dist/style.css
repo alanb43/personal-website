@@ -13,11 +13,9 @@
 
 body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-color: white; position: relative; }
 
-header { height: 64px; width: 100vw; background-color: #131921; position: fixed; z-index: 100; }
+#header { position: fixed; height: 64px; top: 0vh; width: 100vw; background-color: #131921; z-index: 100; }
 
-.top-half { position: relative; height: 117vh; }
-
-#logo { position: relative; left: 0.7vw; top: 0.5vh; width: 105px; height: 63px; }
+#logo { position: relative; left: 0.7vw; top: 0vh; width: 105px; height: 63px; }
 
 #search { position: relative; top: -5.6vh; left: 20vw; width: 60vw; height: 4.4vh; background-color: white;  border-radius: 4px; }
 
@@ -29,13 +27,11 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 #magnifying_glass { position: relative; left: .5vw; top: .25vw; }
 
-.cart { position: fixed; top: 11px; left: 1780px; height: 38px; width: 75px; }
+.cart { position: relative; top: -100px; left: 92.5vw; height: 38px; width: 3vw; }
 
-#cart0 { position: fixed; top: 11px; left: 1782px; z-index: 40; }
+#cart1 { display: none; }
 
-#cart1 { position: fixed; top: 9px; left: 1780px; }
-
-#socials { height: 40px; background-color: #232f3e; position: relative; top: -48px; }
+#socials { position: relative; background-color: #232f3e; top: -85px; }
 
 .social { height: 30px; width: 30px; background-color: #232f3e; margin: 5px; border: 3px white; margin-right: -25px; }
 
@@ -47,11 +43,21 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 #youtube { position: relative; left: 200px; }
 
+#resume { position: relative; left: 260px; }
+
+#top-half { position: relative; }
+
 #directory { position: absolute; top: 120px; left: 300px; font-family: "Amazon-medium"; font-size: 14px; color: #878989; }
 
-#headshot { position: sticky; top: 180px; bottom: 0vh; left: 20vw; height: 460px; width: 460px; }
+#midsection { list-style: none; display: flex; flex-direction: horizontal; position: relative; top: 62px; margin-left: 12vw; }
 
-.product-info { position: relative; left: 46vw; top: -30.5vh; width: 500px; font-family: "Amazon-medium"; }
+#headshot { position: sticky; top: 20vh; bottom: 0vh; height: 24vw; width: 24vw; min-width: 220px; min-height: 220px; }
+
+#headline { position: relative; width: 40%; }
+
+.product-info { position: relative; left: 2vw; width: 30vw; top: 10vh; font-family: "Amazon-medium"; }
+
+#name { position: relative; }
 
 #by-line { font-family: "Amazon-medium"; position: relative; top: -2vh; color: #007187; }
 
@@ -77,7 +83,7 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 #see { color: #007187; }
 
-.price-info { position: absolute; margin-left: 1430px; top: 180px; width: 240px; background-color: white; 
+.price-info { position: relative; left: 0vw; top: 12vh; width: 240px; height: 450px; background-color: white; 
   border: 2px #eceeee; border-style: solid; border-radius: 5%; font-family: "Amazon-medium"; }
 
 .price-para { position: relative; left: 13px; top: -7px; width: 220px; background-color: white; }
@@ -99,11 +105,11 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 #maxp { position: relative; left: 0px; top: -10px; height: 20px; z-index: 5;}
 
-.cart-button { position: relative; top: -25px; left: 10px; background: transparent; border: none !important; height: 100%; width: 240px; }
+.cart-button { position: relative; top: -25px; left: 10px; background: transparent; border: none !important; }
 
-#add2cart { left: 15px; height: 105%; width: 93%; }
+#add2cart { left: 15px; width: 93%; }
 
-#buynow { left: 15px; height: 105%; width: 93%; }
+#buynow { left: 15px; width: 93%; }
 
 #secure { position: relative; top: -18px; left: 13px;}
 
@@ -132,13 +138,14 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 .close { position: absolute; top: 0; right: 10px; font-size: 42px; color: #333; 
   transform: rotate(45deg); cursor: pointer; }
 
-#line-break { position: relative; top: 3vh; width: 90%; }
+#line-break { position: relative; top: 10vh; width: 90%; }
 
 .contactbutton { background: none!important; border: none; padding: 0!important; font-family: "Amazon-medium"; font-size: 15px;
   color: #31a9d8; text-decoration: none; cursor: pointer; position: relative; left: 5px; }
 
+#bottom { position: relative; top: 5vh; }
 
-#project-head { position: relative; color: #cc6600; font-family: "Amazon-medium"; font-size: 19px; left: 10vw; top: 4vh; width: 400px;}
+#project-head { position: relative; color: #cc6600; font-family: "Amazon-medium"; font-size: 19px; left: 10vw; top: 5vh; width: 400px;}
 
 #videos-section { position: relative; top: 4vh; left: 9vw; width: 80vw; display: inline-flex;}
 
@@ -158,18 +165,18 @@ header { height: 64px; width: 100vw; background-color: #131921; position: fixed;
 
 .yt-vid { display: inline-flex; margin: 1vw; }
 
+footer { position: relative; top: 13vh; background-color: #131921; width: 100%; height: 15vh; }
+
 #navBackToTop { text-decoration: none;}
 
-#navFooterBackToTop { position: absolute; bottom: -11vh; height: 4vh; width: 100%; text-align: center; background-color: #37475a; }
+#navFooterBackToTop { position: absolute; height: 4vh; width: 100%; text-align: center; background-color: #37475a; }
 
-#BackToTopText { position: relative; top: 1vh; font-family: "Amazon-medium"; color: white; }
-
-footer { position: absolute; bottom: -230px; background-color: #131921; width: 100%; height: 12vh; }
+#BackToTopText { position: relative; font-family: "Amazon-medium"; color: white; top: 1vh; }
 
 #footer-contact { color:#ededed; font-family: "Amazon-medium"; }
 
-#explicit { position: relative; top: 2vh; left: 2.7vw; font-size: 16px;}
+#explicit { position: relative; top: 5vh; left: 2.7vw; font-size: 16px;}
 
-#closer { position: relative; top: 1.8vh; left: 3vw; width: 94vw; font-family: "Amazon-medium"; color: #babdc1; font-size: 14.5px; line-height: 2vh;}
+#closer { position: relative; top: 5vh; left: 3vw; width: 94vw; font-family: "Amazon-medium"; color: #babdc1; font-size: 14.5px; line-height: 2vh;}
 
 #git-closer { color: #babdc1; text-decoration: underline;}

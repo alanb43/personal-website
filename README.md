@@ -8,7 +8,6 @@ V1 of this project will be completed in a couple of weeks during my free time du
 
 The first version of this site will be suited for desktop viewing only. I want to solidify my design, information, and beginning 'look' before I begin to complicate things and worry about those who will access this site on their phones, as these visitors will be very uncommon.
 
-
 It should be noted that in V2, making the site responsive for different views will be a priority.
 
 ##### V1 UPDATE [1/6/2021 2:31 AM] - V1 Complete

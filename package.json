@@ -1,0 +1,19 @@
+{
+  "name": "bergsneider.dev",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "dist",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanb43/personal-website.git"
+  },
+  "author": "Alan Bergsneider <ab43work@gmail.com> (bergsneider.dev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanb43/personal-website/issues"
+  },
+  "homepage": "https://github.com/alanb43/personal-website#readme"
+}
