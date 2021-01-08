@@ -45,7 +45,7 @@ body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-col
 
 #resume { position: relative; left: 260px; }
 
-#top-half { position: relative; }
+.top-half { position: relative; }
 
 #directory { position: absolute; top: 120px; left: 300px; font-family: "Amazon-medium"; font-size: 14px; color: #878989; }
 
@@ -107,9 +107,9 @@ body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-col
 
 .cart-button { position: relative; top: -25px; left: 10px; background: transparent; border: none !important; }
 
-#add2cart { left: 15px; width: 93%; }
+#add2cart { left: 15px; width: 93%; cursor: pointer}
 
-#buynow { left: 15px; width: 93%; }
+#buynow { left: 15px; width: 93%; cursor: pointer}
 
 #secure { position: relative; top: -18px; left: 13px;}
 
