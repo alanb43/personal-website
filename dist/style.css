@@ -19,13 +19,13 @@ body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-col
 
 #search { position: relative; top: -5.6vh; left: 20vw; width: 60vw; height: 4.4vh; background-color: white;  border-radius: 4px; }
 
-#search-button { height: 44px; background-color: #febd69; width: 50px; position: absolute; right: 0; border-radius: 4px; }
+#search-button { height: 44px; background-color: #febd69; width: 55px; position: absolute; right: 0; border-radius: 4px; }
 
-.search-text { position: absolute; left: 9px; font-size: 18px; font-weight: bold; top: -5px; font-family: "Amazon-medium"; }
+.search-text { position: absolute; left: 9px; width: 40vw; font-size: 18px; font-weight: bold; top: -5px; font-family: "Amazon-medium"; }
 
 .typewrite { color: black; text-decoration: none; font-family: "Amazon-medium"; }
 
-#magnifying_glass { position: relative; left: .5vw; top: .25vw; }
+#magnifying_glass { position: relative; left: 11px; top: 6px; }
 
 .cart { position: relative; top: -100px; left: 92.5vw; height: 38px; width: 3vw; }
 
