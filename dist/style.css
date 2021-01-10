@@ -129,11 +129,11 @@ body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-col
 
 #linkedin3 { position: fixed; left: 38vw; top: 40.5vh; height: 33px; width: 33px; text-decoration: none; }
 
-#resume-check { position: relative; text-decoration: none; color:#31a9d8; text-decoration: none; top: 22.5vh; left: 16vw; font-size: 16px; font-family: "Amazon-medium";}
+#resume-check { position: relative; text-decoration: none; color:#31a9d8; text-decoration: none; top: 22vh; left: 16vw; font-size: 16px; font-family: "Amazon-medium";}
 
 #linkprofile { position: relative; top: 2.8vh; left: 4.4vw; text-decoration: none; font-size: 16px; color: #31a9d8; text-decoration: none;}
 
-#resume2 { position: relative; height: 33px; width: 33px; left: -0.1vw; top: 1.3vh; }
+#resume2 { position: relative; height: 33px; width: 33px; left: -0.1vw; top: 1vh; }
 
 #info-info { position: fixed; top: 23.1vh; left: 45.6vw; font-size: 15px; font-family: "Amazon-medium"; line-height: 27px;}
 
