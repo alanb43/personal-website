@@ -11,176 +11,228 @@
   font-weight: 900; font-style: normal; font-display: swap;
 }
 
-body, html{ margin: 0px; padding: 0px; background-color: #eaeded; background-color: white; position: relative; }
+#logo { position: relative; width: 100px; height: 70px; }
 
-#header { position: fixed; height: 64px; top: 0vh; width: 100vw; background-color: #131921; z-index: 100; }
+html, body { margin: 0px; padding: 0px; }
 
-#logo { position: relative; left: 0.7vw; top: 0vh; width: 105px; height: 63px; }
+#search { display: none; }
 
-#search { position: relative; top: -5.6vh; left: 20vw; width: 60vw; height: 4.4vh; background-color: white;  border-radius: 4px; }
+@media screen and (max-width: 1000px) {
+  
+  .desktop-only { display: none; } /* Gets rid of things I want just on the desktop */
 
-#search-button { height: 44px; background-color: #febd69; width: 55px; position: absolute; right: 0; border-radius: 4px; }
+  #mobile-warning { font-size: 24.5px; margin: 0px 0px 30px 0px; color: #31a9d8; }
 
-.search-text { position: absolute; left: 9px; width: 40vw; font-size: 18px; font-weight: bold; top: -5px; font-family: "Amazon-medium"; }
+  /* Header */        
+      #header { margin: 0%; position: absolute; background-color: #131921; width: 100%; height: 240px; top: 0px; }
+      
+      #logo { position: absolute; margin: 0%; top: 37px; left: 37%; height: 150px; width: 25%; }
 
-.typewrite { color: black; text-decoration: none; font-family: "Amazon-medium"; }
+      .cart { display: none; }
 
-#magnifying_glass { position: relative; left: 11px; top: 6px; }
+      .contactbutton { background: none!important; border: none; padding: 0!important; font-family: "Amazon-medium";
+          text-decoration: none; cursor: pointer; }
+  
+  /* top of screen / social bar */ 
+  
+      #social-bar { position: absolute; background-color: #232f3e; top: 240px; width: 100%; height: 140px; padding-top: 10px; }
 
-.cart { position: relative; top: -100px; left: 92.5vw; height: 38px; width: 3vw; }
+      .social {padding-top: 2%; height: 75px; width: 75px; background-color: #232f3e; margin: 5px; margin-left: 4%; border: 3px white; margin-right: 4%; }
+  
+  /* Midsection of page / All info in between header bars & footer */
+      #middle { position: relative; top: 380px; margin: 0; padding: 0; }
 
-#cart1 { display: none; }
+      #directory { position: absolute; top: 35px; left: 7.5%; font-family: "Amazon-medium"; margin: 5px; font-size: 30px; color: #878989; }
+      
+      #pic-area { position: absolute; height: 1035px; top: 105px; left: 10%; }
 
-#socials { position: relative; background-color: #232f3e; top: -85px; }
+      #headshot { position: relative; top: 20px; height: 80vw; width: 80vw; }
+      
+      #product-info { position: relative; left: 10%; width: 80%; margin: 0; margin-left: 5px; padding-bottom: 100px; top: 950px; font-family: "Amazon-medium"; float: left; }
 
-.social { height: 30px; width: 30px; background-color: #232f3e; margin: 5px; border: 3px white; margin-right: -25px; }
+      #name { position: relative; top: 5px; margin: 0px; padding: 0px; font-size: 50px; }
 
-#linkedin { position: relative; left: 20px; background-color: #232f3e; }
+      #manufacturer { position: relative; font-size: 20px; top: 5px; color:#007185; margin: 0; }
 
-#github { position: relative; left: 80px; }
+      #five-star { position: relative; top: 8px; width: 180px; height: 60px; }
 
-#scholar { position: relative; left: 140px; }
+      #ratings { position: relative; margin: 0; left: 205px; top: -45px; font-size: 20px; color: #007185}
 
-#youtube { position: relative; left: 200px; }
+      hr { background-color: #ededed; position: relative; margin-top: 10;}
+      
+      #line-price { position: relative; margin: 0; top: -10px; font-size: 20px; }
+      
+      #intro-paragraph { position: relative; margin: 0; top: 2px; font-size: 18px; line-height: 28px; }
 
-#resume { position: relative; left: 260px; }
+      #specifications { position: relative; margin: 0; top: 30px;  }
 
-.top-half { position: relative; }
+      #spec-list { position: relative; margin: 0; top: 40px; line-height: 38px; font-size: 15px; }
 
-#directory { position: absolute; top: 120px; left: 300px; font-family: "Amazon-medium"; font-size: 14px; color: #878989; }
+      #qualifications { position: relative; margin: 0; top: 58px; }
 
-#midsection { list-style: none; display: flex; flex-direction: horizontal; position: relative; top: 62px; margin-left: 12vw; }
+      #qualification-list { position: relative; margin: 0; top: 70px; line-height: 38px; font-size: 15px; }
 
-#headshot { position: sticky; top: 20vh; bottom: 0vh; height: 24vw; width: 24vw; min-width: 220px; min-height: 220px; }
+  /* Modal styling, modal is accessible via many buttons / links on the site */
+      .modal { width: 100%; height: 174%; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 8; justify-content: center; display: none; }
 
-#headline { position: relative; width: 40%; }
+      .modal-content { position: relative; top: 500px; width: 100%; height: 650px; background-color: #eaeded; border-radius: 4px; }
+      
+      #modal-contact { position: absolute; top: -30px; left: 38%;  font-size: 76px; font-family: "Amazon-medium"; }
 
-.product-info { position: relative; left: 2vw; width: 30vw; top: 10vh; font-family: "Amazon-medium"; }
+      #contact-info { position: absolute; top: 110px; left: 25%; font-size: 56px; font-family: "Amazon-medium"; line-height: 100px; }
 
-#name { position: relative; }
+      #paragraph-info { display: none; }
 
-#by-line { font-family: "Amazon-medium"; position: relative; top: -2vh; color: #007187; }
+      #linkedin-icon { display: none; }
+      
+      #linkprofile-text { display: none; }
 
-#five-star { position: relative; top: -3vh; left: -0.1vw; width: 100px; }
+      #resume2 { display: none; }
+      
+      #resume-check { display: none; }
 
-#ratings { position: relative; top: -7vh; left: 6vw; width: 100px;font-family: "Amazon-medium"; font-size: 15px; color: #007187; }
+      .close { position: absolute; top: 0; right: 40px; font-size: 100px; color: #333; transform: rotate(45deg); cursor: pointer; }
+}
 
-#top-break { position: relative; top: -8vh; color: #ededed;  }
 
-#descrip1 { position: relative; top: -8vh; line-height: 22px; }
+@media screen and (min-width: 1001px) {
 
-#specs { position: relative; top: -7.5vh; }
+  .mobile-only { display: none; }
 
-.specs { position: relative; top: -7.7vh; line-height: 22px; }
+  /* top of screen / header bar */ 
+      #header { margin: 0%; position: absolute; background-color: #131921; width: 100%; height: 60px; top: 0px; }
+      
+      #logo { position: absolute; margin: 0%; top: 7px; left: 10px; height: 45px; width: 97px; }
+      
+      #search { position: absolute; width: 60%; left: 20%; top: 10px; height: 40px;  background-color: white; border-radius: 4px; display: block;}
 
-.specs-item { padding: 3px 0px; }
+      .search-text { position: absolute; left: 9px; width: 90%; font-size: 16.5px; font-weight: bold; top: -5px; font-family: "Amazon-medium"; }
 
-.qualifications { position: relative; top: -7.5vh; line-height: 23px; }
+      #search-button { position: absolute; right: 0px; width: 45px; margin: 0px; height: 40px; background-color:#febd69; border-radius: 4px; }
 
-#qualifications { position: relative; top: -7.9vh; }
+      #magnifying-glass { position: absolute; height: 30px; width: 35px; top: 4px; left: 5px; }
 
-.qual-item { padding: 3px 0px; }
+      .cart { position: absolute; right: 2.5%; width: 68px; height: 35px; top: 9px; }
 
-#see { color: #007187; }
+      #cart1 { display: none; }
 
-.price-info { position: relative; left: 0vw; top: 12vh; width: 240px; height: 450px; background-color: white; 
-  border: 2px #eceeee; border-style: solid; border-radius: 5%; font-family: "Amazon-medium"; }
+      .contactbutton { background: none!important; border: none; padding: 0!important; font-family: "Amazon-medium";
+          text-decoration: none; cursor: pointer; }
+  
+  /* top of screen / social bar */ 
+  
+      #social-bar { position: absolute; background-color: #232f3e; top: 60px; width: 100%; height: 40px; }
 
-.price-para { position: relative; left: 13px; top: -7px; width: 220px; background-color: white; }
+      .social { height: 30px; width: 30px; background-color: #232f3e; margin: 5px; margin-left: 25px; border: 3px white; margin-right: 25px; }
+  
+  /* Midsection of page / All info in between header bars & footer */
+      #middle { position: relative; top: 79px; height: 1750px; margin: 0; padding: 0; }
 
-#price { color: #b32704; font-size: 20px; width: 150px; left: 8px; }
+      #directory { position: absolute; top: 45px; left: 15%; font-family: "Amazon-medium"; margin: 5px; font-size: 14px; color: #878989; }
+      
+  /* Middle left (picture) */
+      #pic-area { position: absolute; height: 1035px; top: 95px; left: 17%; }
 
-#shipping { color: black; top: -22px; font-size: 15px; width: 150px; }
+      #headshot { position: -webkit-sticky; position: sticky; top: 20px; bottom: 1035px; height: 24vw; width: 24vw; min-width: 200px; min-height: 200px; }
+      
+  /* Middle middle (information) */
+      #product-info { position: relative; left: 45%; width: 25%; margin: 0; margin-left: 5px; top: 90px; font-family: "Amazon-medium"; float: left; }
 
-#arrives { color: black; top: -21px; font-size: 15px; width: 200px; }
+      #name { position: relative; top: 5px; margin: 0px; padding: 0px; font-size: 30px; }
 
-#details-link { text-decoration: none; color: #31a9d8; }
+      #manufacturer { position: relative; top: 5px; color:#007185; margin: 0; }
 
-#arrives1 { color: black; top: -34px; font-size: 15px; width: 200px; }
+      #five-star { position: relative; top: 8px; width: 80px; height: 20px; }
 
-#stock { color: #c55a07; top: -30px; font-size: 21px; width: 200px; }
+      #ratings { position: relative; margin: 0; left: 105px; top: -17px; font-size: 15px; color: #007185}
 
-#max { position: relative; left: 12px; top: -43px; height: 23px; 
-  border: 2px #d9dcdc; border-style: solid; border-radius: 20px; font-size: 11.5px; font-family: "Amazon-medium"; }
+      hr { background-color: #ededed; position: relative; margin-top: 0;}
+      
+      #line-price { position: relative; margin: 0; top: -10px; }
+      
+      #intro-paragraph { position: relative; margin: 0; top: 2px; font-size: 15px; line-height: 22px; }
 
-#maxp { position: relative; left: 0px; top: -10px; height: 20px; z-index: 5;}
+      #specifications { position: relative; margin: 0; top: 30px;  }
 
-.cart-button { position: relative; top: -25px; left: 10px; background: transparent; border: none !important; }
+      #spec-list { position: relative; margin: 0; top: 40px; line-height: 28px; font-size: 15px; }
 
-#add2cart { left: 15px; width: 93%; cursor: pointer}
+      #qualifications { position: relative; margin: 0; top: 58px; }
 
-#buynow { left: 15px; width: 93%; cursor: pointer}
+      #qualification-list { position: relative; margin: 0; top: 70px; line-height: 28px; font-size: 15px; }
+      
+  /* Middle right (price / shipping / add to cart stuff) */
+      #purchase-info { position: absolute; left: 75%; top: 95px; width: 250px; height: 475px; margin: 0; background-color: white; 
+          border: 1px #D5D9D9 solid; border-radius: 8px; font-family: "Amazon-medium"; }
+      
+      #price-details { position: relative; top: 20px; left: 20px; margin: 0px; width: 90%; padding: 0; line-height: 22px; }
 
-#secure { position: relative; top: -18px; left: 13px;}
+      #max { position: relative; height: 23px; top: 33px; left: 20px; font-family: "Amazon-medium"; font-size: 12px;
+          border: 1px #d9dcdc solid; border-radius: 8px; line-height: 19px;}
 
-#ships { position: relative; font-size: 12px; line-height: 2px; left: 18px; top: -20px; }
+      .purchase-button { position: relative; left: 20px; top: 55px; width: 210px; cursor: pointer;}
 
-#return { font-family: "Amazon-medium"; font-size: 16px; position: relative; left: 18px; top: -15px; }
+      #secure-transaction { position: relative; left: 20px; top: 60px; }
 
-.returns { position: relative; top: -25px; left: 20px; font-size: 14px; color: #31a9d8; }
+      #small-shipping-info { position: relative; left: 20px; top: 50px; font-size: 13px; }
 
-.modal { width: 100%; height: 312%; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 8; justify-content: center; display: none; }
+      #return { position: relative; left: 18px; top: 55px; font-family: "Amazon-medium"; font-size: 16px; }
 
-.modal-content { position: fixed; top: 17vh; left: 34vw; width: 30vw; height: 30vh; background-color: #eaeded; border-radius: 4px; }
+      .returns { position: relative; top: 45px; left: 20px; font-size: 14px; color: #31a9d8; }
 
-#explicit-contact { position: fixed; top: 17vh; left: 47%; font-size: 26px; font-family: "Amazon-medium";}
+  /* Middle bottom (videos section) + CAROUSEL STYLING */
 
-#contact-info { position: fixed; top: 23.1vh; left: 35.6vw; font-size: 16px; font-family: "Amazon-medium"; line-height: 33px; }
+      #line-break { position: relative; margin: 0; bottom: -12%; left: 10%; width: 80%; }
 
-#linkedin3 { position: fixed; left: 38vw; top: 40.5vh; height: 33px; width: 33px; text-decoration: none; }
+      #project-tagline { position: relative; margin: 0; color: #cc6600; font-family: "Amazon-medium"; font-size: 19px; left: 10vw; bottom: -260px; width: 400px; z-index: 3;}
+      
+      #video-section { position: relative; width: 80%; padding: 0; margin: 0; height: 370px; left: 15%; top: 230px; }
 
-#resume-check { position: relative; text-decoration: none; color:#31a9d8; text-decoration: none; top: 22vh; left: 16vw; font-size: 16px; font-family: "Amazon-medium";}
+      .video-panel { position: relative; height: 370px; left: 0px; background-color: white;}
 
-#linkprofile { position: relative; top: 2.8vh; left: 4.4vw; text-decoration: none; font-size: 16px; color: #31a9d8; text-decoration: none;}
+      .video { position: absolute; width: 430px; padding: 62.5px 15px 62.5px 30px; margin: 0px;  }
 
-#resume2 { position: relative; height: 33px; width: 33px; left: -0.1vw; top: 1vh; }
+      .captions { position: relative; padding-top: 62px; margin: 0; left: 525px; width: 50%; }
 
-#info-info { position: fixed; top: 23.1vh; left: 45.6vw; font-size: 15px; font-family: "Amazon-medium"; line-height: 27px;}
+      .caption-head { font-size: 18px; font-family: "Amazon"; margin: 0; }
 
-#info-info2 { position: fixed; top: 37.1vh; left: 45.7vw; font-size: 15px; font-family: "Amazon-medium"; line-height: 25px; }
+      .caption { font-size: 15px; font-family: "Amazon-medium"; margin: 0; margin-top: 25px; line-height: 25px; }
+      
+      #button-column { position: relative; margin-left: 50px; left: 92.5%; width: 3%; height: 80px; top: -200px; }
 
-.close { position: absolute; top: 0; right: 10px; font-size: 42px; color: #333; 
-  transform: rotate(45deg); cursor: pointer; }
+      #previous-project-button { position: relative; left: 10%; top: 0px; height: 39px; width: 37px; cursor: pointer; transform: scaleX(-1); }
+      
+      #next-project-button { position: relative; left: 88%; top: 0px; height: 39px; width: 37px; cursor: pointer; }
 
-#line-break { position: relative; top: 10vh; width: 90%; }
+      #panel1 { display: none; } #panel2 { display: none; } #panel3 { display: none; } #panel4 { display: none; }
 
-.contactbutton { background: none!important; border: none; padding: 0!important; font-family: "Amazon-medium"; font-size: 15px;
-  color: #31a9d8; text-decoration: none; cursor: pointer; position: relative; left: 5px; }
+  /* Footer styling */
+      footer { position: relative; bottom: -14%; width: 100%;  background-color: #131921; font-family: "Amazon-medium"; z-index: 9;}
+      
+      #navFooterBackToTop { position: relative; bottom: 0; width: 100%; height: 40px; background-color: #37475a; text-align: center;}
 
-#bottom { position: relative; top: 5vh; }
+      #navBackToTop { position: relative; color: white; text-decoration: none; top: 10px; }
 
-#project-head { position: relative; color: #cc6600; font-family: "Amazon-medium"; font-size: 19px; left: 10vw; top: 5vh; width: 400px;}
+      #closer { position: relative; left: 3.5%; top: 0px; height: 60px; width: 91.5%; color: #babdc1; font-size: 14px; line-height: 20px;}
 
-#videos-section { position: relative; top: 4vh; left: 9vw; width: 80vw; display: inline-flex;}
+  /* Modal styling, modal is accessible via many buttons / links on the site */
+      .modal { width: 100%; height: 174%; position: absolute; top: 0; background-color: rgba(0, 0, 0, 0.7); z-index: 8; justify-content: center; display: none; }
 
-.video-captions { position: relative; width: 60vw; }
+      .modal-content { position: relative; top: 200px; width: 560px; height: 300px; background-color: #eaeded; border-radius: 4px; }
+      
+      #modal-contact { position: absolute; top: 0px; left: 252px;  font-size: 26px; font-family: "Amazon-medium"; }
 
-.captions { width: 1000px; font-family: "Amazon-medium"; font-size: 16px; color: #31a9d8; display: inline-flex; }
+      #contact-info { position: absolute; top: 60px; left: 40px; font-size: 16px; font-family: "Amazon-medium"; line-height: 33px; }
 
-#caption0 { position: relative; left: 12.8vw; top: 2vh; width: 200px; }
+      #paragraph-info { position: absolute; top: 65px; left: 220px; width: 300px; font-size: 15px; font-family: "Amazon-medium"; line-height: 27px; }
 
-#caption1 { position: relative; left: 19.9vw; top: 2vh; width: 200px; }
+      #linkedin-icon { position: relative; top: 30px; left: 40px; height: 33px; width: 33px; text-decoration: none; }
+      
+      #linkprofile-text { position: relative; top: 20px; left: 45px; text-decoration: none; font-size: 16px; color: #31a9d8; text-decoration: none; }
 
-#caption2 { position: relative; left: 26.4vw; top: 2vh; width: 200px; }
+      #resume2 { position: relative; top: 10px; left: -10px; height: 33px; width: 33px; }
+      
+      #resume-check { position: relative; top: 226px; left: 300px; text-decoration: none; color:#31a9d8; text-decoration: none; font-size: 16px; font-family: "Amazon-medium";}
 
-#caption3 { position: relative; left: 28.7vw; top: 2vh; width: 300px; }
+      .close { position: absolute; top: 0; right: 10px; font-size: 42px; color: #333; transform: rotate(45deg); cursor: pointer; }
 
-#caption4 { position: relative; left: 30vw; top: 2vh; width: 300px; }
-
-.yt-vid { display: inline-flex; margin: 1vw; }
-
-footer { position: relative; top: 13vh; background-color: #131921; width: 100%; height: 15vh; }
-
-#navBackToTop { text-decoration: none;}
-
-#navFooterBackToTop { position: absolute; height: 4vh; width: 100%; text-align: center; background-color: #37475a; }
-
-#BackToTopText { position: relative; font-family: "Amazon-medium"; color: white; top: 1vh; }
-
-#footer-contact { color:#ededed; font-family: "Amazon-medium"; }
-
-#explicit { position: relative; top: 5vh; left: 2.7vw; font-size: 16px;}
-
-#closer { position: relative; top: 5vh; left: 3vw; width: 94vw; font-family: "Amazon-medium"; color: #babdc1; font-size: 14.5px; line-height: 2vh;}
-
-#git-closer { color: #babdc1; text-decoration: underline;}
+}
