@@ -3,9 +3,32 @@
     <head>
         <link rel="stylesheet" href="style-responsive.css">
         <script src="animated-search-text.js"></script>
-        
+        <script src="swap-cart-images.js"></script>
+        <script src="project-slider.js"></script>
     </head>
     <body>
+        <div class="modal">
+            <div class="modal-content">
+                <div class="close">+</div>
+                <p id="modal-contact"><strong>Contact</strong></p>
+                <div id="left-side">
+                    <p id="contact-info">
+                        ab43work&nbsp;<span style="color: #31a9d8">@</span><span style="color: navy">gmail.com</span>
+                        <br>bera&nbsp;<span style="color: #31a9d8">@</span><span style="color: #f2c649;">umich.edu</span>
+                        <br>bergsnei&nbsp;<span style="color: #31a9d8">@</span><span style="color: green;">msu.edu</span><br>(586) 443-9300
+                        <br><a href="https://linkedin.com/in/alan-bergsneider/" target="_blank" style="text-decoration: none;"><img src="images/linkedin2.png" id="linkedin3">
+                            <span id="linkprofile">Linkedin Profile</span></a>
+                    </p>
+                </div>
+                <div id="right-side">
+                    <p id="info-info">I'm most responsive at my gmail and umich addresses,<br> though I still check my MSU email
+                    infrequently. If it's <br>urgent, call! Even if I'm not ready for your opportunities<br>
+                    now, I'm constantly learning and adding to my skillset<br>for the future. Connect with me on linkedin!</p>
+                    <a id="resume-check" href="https://drive.google.com/file/d/1SSh9jKa3pR-9t9LCs8LgUP1hGSXtI18x/view?usp=sharing" target="_blank">
+                    <img src="images/resume2.png" id="resume2">Check out my Resumé</a>
+                </div>
+            </div>
+        </div>
         <header id="header">
             <video disableRemotePlayback autoplay muted loop id="logo"> 
                 <source src="images/best2.mp4" type="video/mp4"> 
@@ -20,15 +43,15 @@
                 </a></p>
             </div>
             <button class="contactbutton">
-                <img src="images/cart0.PNG" class="cart" id="cart0">
-                <img src="images/cart1.PNG" class="cart" id="cart1">
+                <img src="images/empty_cart.png" class="cart" id="cart0">
+                <img src="images/cart_with_item.png" class="cart" id="cart1">
             </button> 
             <div id="social-bar">
-                <a href="https://linkedin.com/in/alan-bergsneider/" target="_blank"><img src="images/linkedin2.png" id="linkedin" class="social"></a>
-                <a href="https://github.com/alanb43" target="_blank"><img src="images/github3.png" id="github" class="social"></a>
-                <a href="https://www.egr.msu.edu/seescholars/scholars/alan-bergsneider" target="_blank"><img src="images/scholar.png" id="scholar" class="social"></a>
-                <a href="https://www.youtube.com/channel/UCe8lesNCPjh_wws11G9mE0A" target="_blank"><img src="images/youtube.png" id="youtube" class="social"></a>
-                <a href="https://drive.google.com/file/d/1SSh9jKa3pR-9t9LCs8LgUP1hGSXtI18x/view?usp=sharing" target="_blank"><img src="images/resume.png" id="resume" class="social"></a>
+                <a href="https://linkedin.com/in/alan-bergsneider/" target="_blank"><img src="images/linkedin2.png" class="social"></a>
+                <a href="https://github.com/alanb43" target="_blank"><img src="images/github3.png" class="social"></a>
+                <a href="https://www.egr.msu.edu/seescholars/scholars/alan-bergsneider" target="_blank"><img src="images/scholar.png" class="social"></a>
+                <a href="https://www.youtube.com/channel/UCe8lesNCPjh_wws11G9mE0A" target="_blank"><img src="images/youtube.png" class="social"></a>
+                <a href="https://drive.google.com/file/d/1SSh9jKa3pR-9t9LCs8LgUP1hGSXtI18x/view?usp=sharing" target="_blank"><img src="images/resume.png" class="social"></a>
             </div>
         </header>
         <div id=middle>
@@ -40,20 +63,23 @@
                 <p id="name">Alan Bergsneider [2001 Edition]</p>
                 <p id="manufacturer">by Mr. & Mrs. Bergsneider</p>
                 <img id="five-star" src="images/5Star.png"><p id="ratings">43 ratings</p>
-                <hr id="top-break"></hr>
-                <p id="paragraph-price"><span style="font-size: 15px; color: #565959!important;">Price:</span>&nbsp;&nbsp;
-                    <span style="font-size: 20px; color: #B12704!important;">Contact for price</span> &nbsp;&&nbsp;&nbsp;
-                    <span style="font-size: 15px;"><strong>FREE Virtual Shipping.</strong></span></p>
+                <hr style="top: -10px"></hr>
+                <p id="line-price">
+                    <span style="font-size: 15px; color: #565959!important;">Price:</span>&nbsp;&nbsp;
+                    <span style="font-size: 19px; color: #B12704!important;" class="contactbutton">Contact for price</span> &nbsp;&&nbsp;
+                    <span style="font-size: 15px;"><strong>FREE Virtual Shipping.</strong></span>
+                </p>
                 <p id="intro-paragraph">Dedicated second-year computer science and data science student at the University of Michigan - Ann Arbor [Transferred in Winter 2021]. 
                     This model is prepared to succeed in his summer 2021 internship, and is actively receiving updates for new skills to offer during Fall 2021. 
                     This model's unsupervised learning algorithm has led to interest in back-end software development, data engineering, and machine learning.</p>
+                <hr style="top: 20px;"></hr>
                 <p id="specifications">Model Specifications</p>
                 <ul id="spec-list">
-                    <li>3.91 Overall MSU Engineering GPA through 4 semesters</li>
+                    <li>3.91 Overall MSU GPA through 4 semesters</li>
                     <li>Extremely dedicated to learning new skills: taking CodePath iOS Mobile Development 
                         course and Stanford Introduction to Machine Learning Course outside of University coursework</li>
-                    <li>Relevant University coursework completed: CSE 231 Intro to Python, CSE 232 Intro to C++, CSE 260 Discrete Math/Structures, MTH 314 Linear Algebra</li>
-                    <li>Relevant University coursework being taken now: EECS 280: Programming and Intro Data Structures</li>
+                    <li>Relevant University coursework completed: CSE 231 Intro to Programming (Python), CSE 232 Intro to Programming 2 (C++), CSE 260 Discrete Math/Structures, MTH 314 Linear Algebra</li>
+                    <li>Relevant University coursework being taken now: EECS 280: Programming and Intro Data Structures (C++)</li>
                 </ul>
                 <p id="qualifications">Skills and Qualifications</p>
                 <ul id="qualification-list">
@@ -69,7 +95,123 @@
                         Storage Accounts, etc.), Hadoop, Scala, Spark, and Python. Projects will go into production and will be used by business or IT teams at Humana.</li>
                 </ul>
             </div>
-            
+            <div id="purchase-info">
+                <p id="price-details">
+                    <span style="font-size: 20px; color: #B12704" class="contactbutton">Contact for price</span>
+                    <br><span style="font-size: 14px">& <strong>FREE Shipping</strong>. <a style="color: #007185" class="contactbutton">Details</a></span><br>
+                    <br><span style="font-size: 15px">Virtually Arrives: <strong>1 business day</strong>
+                    <br>Physically Arrives: <strong>Contact</strong></span><br>
+                    <br><span style="font-size: 20px; color: #c55a07;">In Stock Fall 2021.</span>
+                </p>
+                <button id="max" type="button">Qty: 1 (max)</button>
+                <img src="images/add2cart.PNG" class="purchase-button" onclick="swap();"></form>
+                <img src="images/buynow.PNG" class="purchase-button" onclick="swap();"></form>
+                <img id="secure-transaction" src="images/securetransaction.PNG">
+                <p id="small-shipping-info">
+                    <span style="color: #656564;">Ships from </span>&nbsp;&nbsp;&nbsp;&nbsp;Metro Detroit<br>
+                    <span style="color: #656564;">Sold by </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Bergsneider Family
+                </p>
+                <p id="return"><strong>Add a Return Offer:</strong></p>
+                <input class="returns" type="checkbox" id="su22">
+                <label class="returns" for="su22">Summer 2022</label><br>
+                <input class="returns" type="checkbox" id="grad">
+                <label class="returns" for="grad">After Graduation</label><br>
+            </div>
+            <hr id="line-break"></hr>
+            <p id="project-tagline"><strong>Projects completed by this item</strong></p>
+            <div id="video-section">
+                <div class="video-panel" id="panel0">
+                    <div class="video">
+                        <iframe height="255px" width="450px" src="https://www.youtube.com/embed/ENpPHGj3GbA?rel=0&autoplay=1&loop=1&controls=1&mute=1" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="captions">
+                        <p class="caption-head">Python Discord Bot</p>
+                        <p class="caption">
+                            This project was one I completed in an afternoon. The inspiration for the project was from my initial intrigue in creating a discord 
+                            bot and using the discord library in Python, however I was unsure of what to make a bot for. I asked my friend and his older brother
+                            heard and told me to make one that essentially ruins any picture sent to a discord server, so that's what I did. This bot will take 
+                            an image sent to a server channel by a user, compress it (shrink it and widen it by factors of 5) and send it back to the chat. As a
+                            special bonus, it deletes the original sender's message containing the image, so only the compressed photo can be seen. This project
+                            only took an hour or so (mainly to learn how to use the library and such), and was a fun gag that I enjoyed making.
+                        </p>
+                    </div>
+                </div>
+                <div class="video-panel" id="panel1">
+                    <div class="video">
+                        <iframe height="255px" width="450px" src="https://www.youtube.com/embed/TA47HFQtpvE?rel=0&autoplay=1&loop=1&controls=0&mute=1" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="captions">
+                        <p class="caption-head">Shopping with C++</p>
+                        <p class="caption">
+                            This project was done in my CSE232 C++ course, and involved my first uses of structs and algorithms in C++. Other data structures 
+                            used throughout the project included maps, vectors, and strings. In this project I make a program that takes in a user's shopping 
+                            list as well as store information and returns where to find the items on the shopping list at the cheapest price, as well as how 
+                            much to bring before leaving to shop. In this project I learned the power of user-defined structures and how much more efficiently 
+                            data can be stored, and enjoyed it thoroughly!
+                        </p>
+                    </div>
+                </div>
+                <div class="video-panel" id="panel2">
+                    <div class="video">
+                        <iframe height="255px" width="450px" src="https://www.youtube.com/embed/MYFhfpMm7gc?rel=0&autoplay=1&loop=1&controls=0&mute=1" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="captions">
+                        <p class="caption-head">Coding a Keylogger with Python</p>
+                        <p class="caption">
+                            In this project I utilize the pynput and pyperclip python libraries to create a simple Keylogger. This code should not be used with
+                            malicious intent. This keylogger tracks key-strokes in the logger.log file that it creates when the user presses their first key 
+                            after running the program. This porject was extremely quick to make and fun to play around with, I saw how the accuracy of my typing 
+                            could change for the worse rather quickly with it. Another short and sweet project that I got to learn a bit more Python with!
+                        </p>
+                    </div>
+                </div>
+                <div class="video-panel" id="panel3">
+                    <div class="video">
+                        <iframe height="255px" width="450px" src="https://www.youtube.com/embed/CgycUVq4hog?rel=0&autoplay=1&loop=1&controls=0&mute=1" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="captions">
+                        <p class="caption-head">Self Destructing Messages with C++</p>
+                        <p class="caption">
+                            This was another project completed in my CSE232 C++ course, in which I create Self Destructing Message structures that do as they are
+                            called: Self Destruct! The purpose of these data structures are to hold sensitive messages and a user-defined maximum amount of views 
+                            for the messages, and once a message's views have been expended, the message is gone forever! This project involves my first uses of 
+                            classes in C++, as well as accompanying topics such as constructors, overloading operators, and old content such as pointers. This 
+                            project was fun and was a great way to become better at making & using classes and different functions within them to create objects 
+                            in C++.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/right-arrow.PNG" id="previous-project-button" onclick="previousSlide();">
+            <img src="images/right-arrow.PNG" id="next-project-button" onclick="nextSlide();">
+            <footer>
+                <div id="navFooterBackToTop">
+                    <a href="#logo" id="navBackToTop">Back to top</a>
+                </div>
+                <button class="contactbutton" id="explicit-contact">Contact me!</button>
+                <p id="closer">This wesbite was a fun project I started 01/01/2021. I'd like to think of this as a never ending project, 
+                  something I'll come back to every once in a while to develop and update in order to test and showcase some of my skills. 
+                  If you're from Amazon, this is in no way meant to defraud or scam your company or users of your site. This site will never generate 
+                  revenue and was just a fun mock I did. <em>Also, if you're a recruiter, please contact me!</em> I am always open to learning about exciting
+                  opportunities in the software development & data science/engineering world. Thanks for visiting! 
+                  <a id="git-closer" style="color: #babdc1;" href="https://www.github.com/alanb43/personal-website">GitHub page for this site</a>
+                </p>
+              </footer>
         </div>
     </body>
+    <script>
+        var elements = document.getElementsByClassName('contactbutton');
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].addEventListener("click", function() { 
+            document.querySelector('.modal').style.display = "flex"; 
+          });
+        }
+        document.querySelector('.close').addEventListener("click", function() { 
+          document.querySelector('.modal').style.display = "none"; 
+        });
+      </script>
 </html>
