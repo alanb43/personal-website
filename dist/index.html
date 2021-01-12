@@ -5,6 +5,7 @@
         <script src="scripts/animated-search-text.js"></script>
         <script src="scripts/swap-cart-images.js"></script>
         <script src="scripts/project-slider.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
         <div class="modal">
@@ -27,7 +28,7 @@
             </div>
         </div>
         <header id="header">
-            <video disableRemotePlayback autoplay muted loop id="logo" class="contactbutton"> 
+            <video playsinline disableRemotePlayback autoplay muted loop id="logo" class="contactbutton"> 
                 <source src="images/best2.mp4" type="video/mp4"> 
             </video>
             <div id="search" class="desktop-only">
@@ -39,7 +40,7 @@
                   <span class="wrap"></span>
                 </a></p>
             </div>
-            <button class="contactbutton">
+            <button class="contactbutton desktop-only">
                 <img src="images/empty_cart.png" class="cart" id="cart0">
                 <img src="images/cart_with_item.png" class="cart" id="cart1">
             </button> 
@@ -65,7 +66,7 @@
                 <hr style="top: -10px"></hr>
                 <p id="line-price">
                     <span style="font-size: 15px; color: #565959!important;">Price:</span>&nbsp;&nbsp;
-                    <span style="font-size: 19px; color: #B12704!important;" class="contactbutton">Contact for price</span> &nbsp;&&nbsp;
+                    <span style="font-size: 19px; color: #B12704!important;" class="contactbutton">Contact for price</span><br class="mobile-only"> &nbsp;&&nbsp;
                     <span style="font-size: 15px;"><strong>FREE Virtual Shipping.</strong></span>
                 </p>
                 <p id="intro-paragraph">Dedicated second-year computer science and data science student at the University of Michigan - Ann Arbor [Transferred in Winter 2021]. 
