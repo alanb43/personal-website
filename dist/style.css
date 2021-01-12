@@ -179,7 +179,7 @@ html, body { margin: 0px; padding: 0px; }
 
       .video { position: absolute; width: 430px; padding: 62.5px 15px 62.5px 30px; margin: 0px;  }
 
-      .captions { position: relative; padding-top: 62px; margin: 0; left: 525px; width: 50%; }
+      .captions { position: relative; padding-top: 62px; margin: 0; left: 525px; width: 40%; }
 
       .caption-head { font-size: 18px; font-family: "Amazon"; margin: 0; }
 
@@ -189,7 +189,7 @@ html, body { margin: 0px; padding: 0px; }
 
       #previous-project-button { position: relative; left: 10%; top: 0px; height: 39px; width: 37px; cursor: pointer; transform: scaleX(-1); }
       
-      #next-project-button { position: relative; left: 88%; top: 0px; height: 39px; width: 37px; cursor: pointer; }
+      #next-project-button { position: relative; left: 86%; top: 0px; height: 39px; width: 37px; cursor: pointer; }
 
       #panel1 { display: none; } #panel2 { display: none; } #panel3 { display: none; } #panel4 { display: none; }
 
